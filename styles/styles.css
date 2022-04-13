@@ -1,0 +1,174 @@
+/* Link naar online website: https://oege.ie.hva.nl/~heidenl1/Easy%20Transport%20Amsterdam/menu.html */
+/* importeer het Colendra font uit onze eigen map */
+@font-face {
+	font-family: 'Colendra';
+	src: url('../assets/ColendraRegular.otf');
+	font-style: normal;
+	font-weight: 300;
+}
+
+/* importeer ook de bold gedrukte versie van het Colendra font
+   uit onze eigen map */
+@font-face {
+	font-family: 'Colendra';
+	src: url('../assets/ColendraBold.otf');
+	font-style: normal;
+	font-weight: 700;
+	/* bold */
+}
+
+/* CSS reset */
+*,
+html {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+header {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 375px;
+	height: 60px;
+	background-color: #2A2C46;
+	padding: 4px;
+	color: white;
+	text-align: center;
+}
+
+/* Stel een plaatje van de stippen uit de ISGA guide in als achtergrond
+   en herhaal dit patroon */
+body {
+	background-image: url('../images/dot_background.png');
+	background-repeat: repeat;
+	margin: 20% 10% 20% 10%;
+}
+
+footer {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 375px;
+	height: 40px;
+	background-color: #2A2C46;
+	padding: 10px;
+	color: white;
+	font-weight: 400;
+	font-size: 1.25em;
+}
+
+.botnav {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+}
+
+/* onderstaande styles voor de <h1>, <h2> en <p> tags geven een voorbeeld
+   hoe je de geimporteerde fonts kunt gebruiken.
+   Op je eigen website mag je natuurlijk andere lettertypes, groottes, en
+   kleuren, etc. voor deze tags gebruiken. */
+
+main {
+	margin: 10% 5% 15%;
+	background-color: white;
+}
+
+h1 {
+	font-family: 'Colendra', sans-serif;
+	font-size: 20pt;
+	color: #1D1D1B;
+	font-weight: 700;
+	/* bold */
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 10px;
+}
+
+h2 {
+	font-family: 'Colendra', sans-serif;
+	font-size: 20pt;
+	color: #1D1D1B;
+	font-weight: 500;
+	text-align: center;
+	text-decoration: underline;
+}
+
+div h2 {
+	text-decoration: none;
+}
+
+p {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 16pt;
+	text-align: center;
+	margin: 16px 0px;
+}
+
+
+footer p {
+	margin: 0px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+#button {
+	color: white;
+	background-color: #ED4F3A;
+	text-align: center;
+	padding: 1.5em;
+	margin-top: 2em;
+	border-radius: 8px;
+	display: block;
+	font-weight: 700;
+	text-decoration: none;
+	box-shadow: 5px 5px black;
+}
+
+#button:active {
+	box-shadow: none;
+	transform: scale(0.95);
+}
+
+.smallbutton {
+	color: white;
+	background-color: #ED4F3A;
+	box-shadow: 3px 3px black;
+	padding: 0.5em;
+	border-radius: 4px;
+	margin: 20px 4px 30px 4px;
+}
+
+.smallbutton:active {
+	box-shadow: none;
+	transform: scale(0.95);
+}
+
+.rows {
+	display: flex;
+	justify-content: center;
+}
+
+.columns {
+	flex: 30%;
+}
+
+.polaroid {
+	padding: 10px 12px 20px 12px;
+	margin: 5px;
+	border: 1px solid;
+	border-color: black;
+	background-color: white;
+	transform: scale(0.95);
+}
+
+p a {
+	color: #ED4F3A;
+}
+
+figure {
+	text-align: center;
+}
